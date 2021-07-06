@@ -1,5 +1,5 @@
 'use strict';
-
+let score =0;
 
 let username=prompt('let us know about your NAME');
 console.log(username);
@@ -24,6 +24,7 @@ if (myname ==='YES'|| myname ==='Y') {
 
 console.log(myname);
 alert('YOU ARE RIGHT!');
+score++
 
 } else if(myname ==='NO'|| myname ==='N'){
 
@@ -40,13 +41,14 @@ alert('please write your answer using  yes/no or y/n only !');
     console.log('the answer before',age);
 
     age=age.toUpperCase();
-    
+
     console.log('the answer after',age);
 
     if (age ==='YES'|| age ==='Y') {
 
     console.log(age);
     alert('MAYBE!');
+score++
 
     } else if(age==='NO'|| age ==='N'){
 
@@ -59,16 +61,18 @@ alert('please write your answer using  yes/no or y/n only !');
 
 
         let home=prompt('IN YOUR OPINION I LIVE IN AMMAN ?');
-        
+
             console.log('the answer before',home);
 
             home=home.toUpperCase();
-            
+
             console.log('the answer after',home);
 
         if (home ==='YES'|| home ==='Y') {
 
         console.log(home);
+        score++
+
         alert('YES I LIVE IN AMMAN !');
 
         } else if(home ==='NO'|| home ==='N'){
@@ -86,12 +90,14 @@ alert('please write your answer using  yes/no or y/n only !');
             console.log('the answer before',football);
 
             football=football.toUpperCase();
-            
+
             console.log('the answer after',football);
 
             if (football ==='YES'|| football ==='Y') {
 
             console.log(football);
+            score++
+
             alert('YES I LIKE WATCH FOOTBALL');
 
             } else if(football ==='NO'|| football ==='N'){
@@ -109,12 +115,14 @@ alert('please write your answer using  yes/no or y/n only !');
                 console.log('the answer before',best);
 
                 best=best.toUpperCase();
-                
+
                 console.log('the answer after',best);
 
                 if (best ==='YES'|| best ==='Y') {
 
                 console.log(best);
+                score++
+
                 alert('YOU ARE REAL FOOTBALL FAN ');
 
                 } else if(best==='NO'|| best ==='N'){
@@ -127,35 +135,67 @@ alert('please write your answer using  yes/no or y/n only !');
                 }
 
 
-                    // let copa=prompt(' DO YOU THINK ! LEONIL MESSI ! WILL GET COPA AMERICA THIS YEAR ?');
-                    // console.log(copa);
+
+let num
+alert('NOW guess A Number Between in your mind');
+
+num=prompt('inter the number you guess');
+
+    for( let i=0;i<3;i++)
+    {
+
+        if(num==7) 
+        {
+            alert('you are right !');
+            score++
+
+                break;
+        }
 
 
-                    // if (copa==='YES') {
+           else if(num<7)
+           {
+           num=prompt('TOO low!');     
+           }
 
-                    // console.log(copa);
-                    // alert('OF  COURSE I AM SURE LIKE YOU ! ');
-
-                    // } else if(copa==='NO'){
-
-                    // console.log(copa);
-                    // alert('LET US WAIT AND SEE IT JUST A FEW DAYS ');
-
-
-                    // }else {
-                    // alert('please write your answer in UPPERCASE');
-                    // }
-
-
-                    //     if(best==='YES'){
-                    //     alert('YOU ARE REAL FOOTBALL FAN' );
-                    //     }else{
-                    //     alert('I THINK ANIME IS GOOD FOR YOU ' );
-                    //     }
-
-
-
-
+            else {
+              num=prompt('TOO HIGHT !');
+            }
+        }
 
 
 
+    console.log(num);
+
+
+
+
+
+
+let month = ['march', 'april', 'may', 'june', 'july', 'august']
+
+alert('what is the best month to make  BARBECUE in the outside country');
+
+for (let i = 0; i < 6; i++) {
+
+    let yourmonth = prompt('type the name of month');
+
+    for (let j = 0; j < month.length; j++) {
+
+        if (yourmonth === month[j]) {
+
+
+            alert('you are right !');
+                score++
+            i=6
+        ;
+                break;
+            
+        }
+
+    }
+   
+}
+
+    alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
+alert('your score is '+score+'/7');
