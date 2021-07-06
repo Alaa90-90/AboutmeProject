@@ -4,6 +4,9 @@
 ## About me project 
 
 this is the second or third project i work on it by myself and it is a funny questions game to make comparison between my and yours answers .
+in the last update for the game we add 2 funny questions to know more about me 
+like who public figures i followed on social media 
+and adding new guessing interactive question .
 
 ### Author: Alaa Marei
 

@@ -136,66 +136,61 @@ score++
 
 
 
-let num
-alert('NOW guess A Number Between in your mind');
+                    let num
+                    alert('NOW guess A Number Between in your mind');
 
-num=prompt('inter the number you guess');
+                    num=prompt('inter the number you guess');
 
-    for( let i=0;i<3;i++)
-    {
+                    for( let i=0;i<3;i++)
+                    {
 
-        if(num==7) 
-        {
-            alert('you are right !');
-            score++
+                    if(num==7) 
+                    {
+                    alert('you are right !');
+                    score++
 
-                break;
-        }
-
-
-           else if(num<7)
-           {
-           num=prompt('TOO low!');     
-           }
-
-            else {
-              num=prompt('TOO HIGHT !');
-            }
-        }
+                    break;
+                    }
 
 
+                    else if(num<7)
+                    {
+                    num=prompt('TOO low!');     
+                    }
 
-    console.log(num);
+                    else {
+                    num=prompt('TOO HIGHT !');
+                    }
+                    }
+
+                    console.log(num);
+
+                    
+
+                        let month = ['march', 'april', 'may', 'june', 'july', 'august']
+
+                        alert('what is the best month to make  BARBECUE in the outside country');
+
+                        for (let i = 0; i < 6; i++) {
+
+                        let yourmonth = prompt('type the name of month');
+
+                        for (let j = 0; j < month.length; j++) {
+
+                        if (yourmonth === month[j]) {
 
 
+                        alert('you are right !');
+                        score++
+                        i=6
+                        ;
+                        break;
 
+                        }
 
+                        }
 
+                        }
 
-let month = ['march', 'april', 'may', 'june', 'july', 'august']
-
-alert('what is the best month to make  BARBECUE in the outside country');
-
-for (let i = 0; i < 6; i++) {
-
-    let yourmonth = prompt('type the name of month');
-
-    for (let j = 0; j < month.length; j++) {
-
-        if (yourmonth === month[j]) {
-
-
-            alert('you are right !');
-                score++
-            i=6
-        ;
-                break;
-            
-        }
-
-    }
-   
-}
-
-    alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
-alert('your score is '+score+'/7');
+                        alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
+                        alert('your score is '+score+'/7');
