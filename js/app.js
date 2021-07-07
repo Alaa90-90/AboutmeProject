@@ -137,11 +137,11 @@ score++
 
 
                     let num
-                    alert('NOW guess A Number Between in your mind');
+                    alert('NOW guess A Number in your mind');
 
                     num=prompt('inter the number you guess');
 
-                    for( let i=0;i<3;i++)
+                    for( let i=0;i<4;i++)
                     {
 
                     if(num==7) 
@@ -160,6 +160,11 @@ score++
 
                     else {
                     num=prompt('TOO HIGHT !');
+                    }
+                    if(i===3){
+                        alert('you are out of tries and the correct answer is 7'
+
+                        )
                     }
                     }
 
