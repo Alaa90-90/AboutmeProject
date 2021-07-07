@@ -168,7 +168,6 @@ score++
                     }
                     }
 
-                    console.log(num);
 
                     
 
@@ -176,26 +175,35 @@ score++
 
                         alert('what is the best month to make  BARBECUE in the outside country');
 
-                        for (let i = 0; i < 6; i++) {
+                        for (let k=0; k<6;k++) {
 
                         let yourmonth = prompt('type the name of month');
-
+                        
                         for (let j = 0; j < month.length; j++) {
 
                         if (yourmonth === month[j]) {
-
-
+                           
+                           
                         alert('you are right !');
                         score++
-                        i=6
+                        k=6
                         ;
                         break;
+ 
+                       
 
                         }
-
+                      
                         }
-
+                        if(k===5){
+                            alert('you are out of tries and the correct answer is ');
+                     
                         }
+             
+                      
+                    }
 
-                        alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
-                        alert('your score is '+score+'/7');
+                    alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
+                    alert('your score is '+score+'/7');
+                      
+                      
