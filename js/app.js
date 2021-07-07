@@ -48,12 +48,12 @@ alert('please write your answer using  yes/no or y/n only !');
 
     console.log(age);
     alert('MAYBE!');
-score++
 
     } else if(age==='NO'|| age ==='N'){
 
     console.log(age);
     alert('IT SEEM RIGHT');
+    score++
 
     }else {
     alert('please write your answer using  yes/no or y/n only !');
