@@ -35,6 +35,7 @@ function qw1() {
         alert('please write your answer using  yes/no or y/n only !');
     }
 }
+qw1();
 
 
 function qw2() {
@@ -61,6 +62,7 @@ function qw2() {
         alert('please write your answer using  yes/no or y/n only !');
     }
 }
+qw2();
 
 
 function qw3() {
@@ -88,6 +90,7 @@ function qw3() {
         alert('please write your answer using  yes/no or y/n only !');
     }
 }
+qw3();
 
 function qw4() {
     let football = prompt('DO YOU THINK THAT I LIKE WATCH FOOTBALL ?');
@@ -114,6 +117,7 @@ function qw4() {
         alert('please write your answer using  yes/no or y/n only !');
     }
 }
+qw4();
 
 function qw5() {
     let best = prompt('DO YOU AGREE WITH ME THAT ! LEONIL MESSI ! IS THE BEST FOOTBALL EVER ?');
@@ -141,6 +145,7 @@ function qw5() {
     }
 
 }
+qw5();
 
 let num
 alert('NOW guess A Number in your mind');
