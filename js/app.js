@@ -147,6 +147,7 @@ function qw5() {
 }
 qw5();
 
+function qw6() {
 let num
 alert('NOW guess A Number in your mind');
 
@@ -160,7 +161,6 @@ for (let i = 0; i < 4; i++) {
 
         break;
     }
-
 
     else if (num < 7) {
         num = prompt('TOO low!');
@@ -176,9 +176,9 @@ for (let i = 0; i < 4; i++) {
     }
 }
 
+qw6();
 
-
-
+function qw7(){
 let month = ['march', 'april', 'may', 'june', 'july', 'august']
 
 alert('what is the best month to make  BARBECUE in the outside country');
@@ -210,7 +210,8 @@ for (let k = 0; k < 6; k++) {
 
 
 }
-
+qw7();
+    
 alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
 alert('your score is ' + score + '/7');
 
