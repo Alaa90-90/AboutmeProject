@@ -1,209 +1,205 @@
 'use strict';
-let score =0;
+let score = 0;
 
-let username=prompt('let us know about your NAME');
+let username = prompt('let us know about your NAME');
 console.log(username);
 
 
 
-alert('nice to meet you, '+username );
+alert('nice to meet you, ' + username);
 
 
-alert('LET US START THE GUESSING GAME' );
+alert('LET US START THE GUESSING GAME');
 
+function qw1() {
+    let myname = prompt('DO YOU THINK MY NAME START WITH .. A ..?');
 
-let myname=prompt('DO YOU THINK MY NAME START WITH .. A ..?');
+    console.log('the answer before', myname);
 
-console.log('the answer before',myname);
+    myname = myname.toUpperCase();
 
-myname=myname.toUpperCase();
+    console.log('the answer after', myname);
 
-console.log('the answer after',myname);
+    if (myname === 'YES' || myname === 'Y') {
 
-if (myname ==='YES'|| myname ==='Y') {
+        console.log(myname);
+        alert('YOU ARE RIGHT!');
+        score++;
 
-console.log(myname);
-alert('YOU ARE RIGHT!');
-score++
+    } else if (myname === 'NO' || myname === 'N') {
 
-} else if(myname ==='NO'|| myname ==='N'){
+        console.log(myname);
+        alert('TRY AGAIN ..');
 
-console.log(myname);
-alert('TRY AGAIN ..');
-
-}else {
-alert('please write your answer using  yes/no or y/n only !');
+    } else {
+        alert('please write your answer using  yes/no or y/n only !');
+    }
 }
 
+let age = prompt('DO YOU THINK THAT I AM IN THE 20`S DECADE? ');
 
-    let age=prompt('DO YOU THINK THAT I AM IN THE 20`S DECADE? ');
+console.log('the answer before', age);
 
-    console.log('the answer before',age);
+age = age.toUpperCase();
 
-    age=age.toUpperCase();
+console.log('the answer after', age);
 
-    console.log('the answer after',age);
-
-    if (age ==='YES'|| age ==='Y') {
+if (age === 'YES' || age === 'Y') {
 
     console.log(age);
     alert('MAYBE!');
 
-    } else if(age==='NO'|| age ==='N'){
+} else if (age === 'NO' || age === 'N') {
 
     console.log(age);
     alert('IT SEEM RIGHT');
     score++
 
-    }else {
+} else {
     alert('please write your answer using  yes/no or y/n only !');
+}
+
+
+let home = prompt('IN YOUR OPINION I LIVE IN AMMAN ?');
+
+console.log('the answer before', home);
+
+home = home.toUpperCase();
+
+console.log('the answer after', home);
+
+if (home === 'YES' || home === 'Y') {
+
+    console.log(home);
+    score++
+
+    alert('YES I LIVE IN AMMAN !');
+
+} else if (home === 'NO' || home === 'N') {
+
+    console.log(home);
+    alert('IN FACT I LIVE IN AMMANH');
+
+} else {
+    alert('please write your answer using  yes/no or y/n only !');
+}
+
+
+let football = prompt('DO YOU THINK THAT I LIKE WATCH FOOTBALL ?');
+
+console.log('the answer before', football);
+
+football = football.toUpperCase();
+
+console.log('the answer after', football);
+
+if (football === 'YES' || football === 'Y') {
+
+    console.log(football);
+    score++
+
+    alert('YES I LIKE WATCH FOOTBALL');
+
+} else if (football === 'NO' || football === 'N') {
+
+    console.log(football);
+    alert('YOU ARE WRONG !');
+
+} else {
+    alert('please write your answer using  yes/no or y/n only !');
+}
+
+
+let best = prompt('DO YOU AGREE WITH ME THAT ! LEONIL MESSI ! IS THE BEST FOOTBALL EVER ?');
+
+console.log('the answer before', best);
+
+best = best.toUpperCase();
+
+console.log('the answer after', best);
+
+if (best === 'YES' || best === 'Y') {
+
+    console.log(best);
+    score++
+
+    alert('YOU ARE REAL FOOTBALL FAN ');
+
+} else if (best === 'NO' || best === 'N') {
+
+    console.log(best);
+    alert(' I DO NOT THINK THAT AND I DON`T AGREE WITH YOU');
+
+} else {
+    alert('please write your answer using  yes/no or y/n only !');
+}
+
+
+
+let num
+alert('NOW guess A Number in your mind');
+
+num = prompt('inter the number you guess');
+
+for (let i = 0; i < 4; i++) {
+
+    if (num == 7) {
+        alert('you are right !');
+        score++
+
+        break;
     }
 
 
-        let home=prompt('IN YOUR OPINION I LIVE IN AMMAN ?');
+    else if (num < 7) {
+        num = prompt('TOO low!');
+    }
 
-            console.log('the answer before',home);
+    else {
+        num = prompt('TOO HIGHT !');
+    }
+    if (i === 3) {
+        alert('you are out of tries and the correct answer is 7'
 
-            home=home.toUpperCase();
+        )
+    }
+}
 
-            console.log('the answer after',home);
 
-        if (home ==='YES'|| home ==='Y') {
 
-        console.log(home);
-        score++
 
-        alert('YES I LIVE IN AMMAN !');
+let month = ['march', 'april', 'may', 'june', 'july', 'august']
 
-        } else if(home ==='NO'|| home ==='N'){
+alert('what is the best month to make  BARBECUE in the outside country');
 
-        console.log(home);
-        alert('IN FACT I LIVE IN AMMANH');
+for (let k = 0; k < 6; k++) {
 
-        }else {
-        alert('please write your answer using  yes/no or y/n only !');
+    let yourmonth = prompt('type the name of month');
+
+    for (let j = 0; j < month.length; j++) {
+
+        if (yourmonth === month[j]) {
+
+
+            alert('you are right !');
+            score++
+            k = 6
+                ;
+            break;
+
+
+
         }
 
+    }
+    if (k === 5) {
+        alert('you are out of tries and the correct answer is ');
 
-            let football=prompt('DO YOU THINK THAT I LIKE WATCH FOOTBALL ?');
-
-            console.log('the answer before',football);
-
-            football=football.toUpperCase();
-
-            console.log('the answer after',football);
-
-            if (football ==='YES'|| football ==='Y') {
-
-            console.log(football);
-            score++
-
-            alert('YES I LIKE WATCH FOOTBALL');
-
-            } else if(football ==='NO'|| football ==='N'){
-
-            console.log(football);
-            alert('YOU ARE WRONG !');
-
-            }else {
-            alert('please write your answer using  yes/no or y/n only !');
-            }
+    }
 
 
-                let best=prompt('DO YOU AGREE WITH ME THAT ! LEONIL MESSI ! IS THE BEST FOOTBALL EVER ?');
+}
 
-                console.log('the answer before',best);
+alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
+alert('your score is ' + score + '/7');
 
-                best=best.toUpperCase();
-
-                console.log('the answer after',best);
-
-                if (best ==='YES'|| best ==='Y') {
-
-                console.log(best);
-                score++
-
-                alert('YOU ARE REAL FOOTBALL FAN ');
-
-                } else if(best==='NO'|| best ==='N'){
-
-                console.log(best);
-                alert(' I DO NOT THINK THAT AND I DON`T AGREE WITH YOU');
-
-                }else {
-                alert('please write your answer using  yes/no or y/n only !');
-                }
-
-
-
-                    let num
-                    alert('NOW guess A Number in your mind');
-
-                    num=prompt('inter the number you guess');
-
-                    for( let i=0;i<4;i++)
-                    {
-
-                    if(num==7) 
-                    {
-                    alert('you are right !');
-                    score++
-
-                    break;
-                    }
-
-
-                    else if(num<7)
-                    {
-                    num=prompt('TOO low!');     
-                    }
-
-                    else {
-                    num=prompt('TOO HIGHT !');
-                    }
-                    if(i===3){
-                        alert('you are out of tries and the correct answer is 7'
-
-                        )
-                    }
-                    }
-
-
-                    
-
-                        let month = ['march', 'april', 'may', 'june', 'july', 'august']
-
-                        alert('what is the best month to make  BARBECUE in the outside country');
-
-                        for (let k=0; k<6;k++) {
-
-                        let yourmonth = prompt('type the name of month');
-                        
-                        for (let j = 0; j < month.length; j++) {
-
-                        if (yourmonth === month[j]) {
-                           
-                           
-                        alert('you are right !');
-                        score++
-                        k=6
-                        ;
-                        break;
- 
-                       
-
-                        }
-                      
-                        }
-                        if(k===5){
-                            alert('you are out of tries and the correct answer is ');
-                     
-                        }
-             
-                      
-                    }
-
-                    alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
-                    alert('your score is '+score+'/7');
-                      
-                      
