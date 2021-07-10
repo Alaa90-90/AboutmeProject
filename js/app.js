@@ -115,31 +115,32 @@ function qw4() {
     }
 }
 
-let best = prompt('DO YOU AGREE WITH ME THAT ! LEONIL MESSI ! IS THE BEST FOOTBALL EVER ?');
+function qw5() {
+    let best = prompt('DO YOU AGREE WITH ME THAT ! LEONIL MESSI ! IS THE BEST FOOTBALL EVER ?');
 
-console.log('the answer before', best);
+    console.log('the answer before', best);
 
-best = best.toUpperCase();
+    best = best.toUpperCase();
 
-console.log('the answer after', best);
+    console.log('the answer after', best);
 
-if (best === 'YES' || best === 'Y') {
+    if (best === 'YES' || best === 'Y') {
 
-    console.log(best);
-    score++
+        console.log(best);
+        score++
 
-    alert('YOU ARE REAL FOOTBALL FAN ');
+        alert('YOU ARE REAL FOOTBALL FAN ');
 
-} else if (best === 'NO' || best === 'N') {
+    } else if (best === 'NO' || best === 'N') {
 
-    console.log(best);
-    alert(' I DO NOT THINK THAT AND I DON`T AGREE WITH YOU');
+        console.log(best);
+        alert(' I DO NOT THINK THAT AND I DON`T AGREE WITH YOU');
 
-} else {
-    alert('please write your answer using  yes/no or y/n only !');
+    } else {
+        alert('please write your answer using  yes/no or y/n only !');
+    }
+
 }
-
-
 
 let num
 alert('NOW guess A Number in your mind');
