@@ -89,30 +89,31 @@ function qw3() {
     }
 }
 
-let football = prompt('DO YOU THINK THAT I LIKE WATCH FOOTBALL ?');
+function qw4() {
+    let football = prompt('DO YOU THINK THAT I LIKE WATCH FOOTBALL ?');
 
-console.log('the answer before', football);
+    console.log('the answer before', football);
 
-football = football.toUpperCase();
+    football = football.toUpperCase();
 
-console.log('the answer after', football);
+    console.log('the answer after', football);
 
-if (football === 'YES' || football === 'Y') {
+    if (football === 'YES' || football === 'Y') {
 
-    console.log(football);
-    score++
+        console.log(football);
+        score++
 
-    alert('YES I LIKE WATCH FOOTBALL');
+        alert('YES I LIKE WATCH FOOTBALL');
 
-} else if (football === 'NO' || football === 'N') {
+    } else if (football === 'NO' || football === 'N') {
 
-    console.log(football);
-    alert('YOU ARE WRONG !');
+        console.log(football);
+        alert('YOU ARE WRONG !');
 
-} else {
-    alert('please write your answer using  yes/no or y/n only !');
+    } else {
+        alert('please write your answer using  yes/no or y/n only !');
+    }
 }
-
 
 let best = prompt('DO YOU AGREE WITH ME THAT ! LEONIL MESSI ! IS THE BEST FOOTBALL EVER ?');
 
