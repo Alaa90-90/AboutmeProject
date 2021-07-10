@@ -62,30 +62,32 @@ function qw2() {
     }
 }
 
-let home = prompt('IN YOUR OPINION I LIVE IN AMMAN ?');
 
-console.log('the answer before', home);
+function qw3() {
+    let home = prompt('IN YOUR OPINION I LIVE IN AMMAN ?');
 
-home = home.toUpperCase();
+    console.log('the answer before', home);
 
-console.log('the answer after', home);
+    home = home.toUpperCase();
 
-if (home === 'YES' || home === 'Y') {
+    console.log('the answer after', home);
 
-    console.log(home);
-    score++
+    if (home === 'YES' || home === 'Y') {
 
-    alert('YES I LIVE IN AMMAN !');
+        console.log(home);
+        score++
 
-} else if (home === 'NO' || home === 'N') {
+        alert('YES I LIVE IN AMMAN !');
 
-    console.log(home);
-    alert('IN FACT I LIVE IN AMMANH');
+    } else if (home === 'NO' || home === 'N') {
 
-} else {
-    alert('please write your answer using  yes/no or y/n only !');
+        console.log(home);
+        alert('IN FACT I LIVE IN AMMANH');
+
+    } else {
+        alert('please write your answer using  yes/no or y/n only !');
+    }
 }
-
 
 let football = prompt('DO YOU THINK THAT I LIKE WATCH FOOTBALL ?');
 
