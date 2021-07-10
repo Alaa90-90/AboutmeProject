@@ -62,7 +62,7 @@ function qw2() {
         alert('please write your answer using  yes/no or y/n only !');
     }
 }
-qw2();
+ qw2();
 
 
 function qw3() {
