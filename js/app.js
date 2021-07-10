@@ -36,29 +36,31 @@ function qw1() {
     }
 }
 
-let age = prompt('DO YOU THINK THAT I AM IN THE 20`S DECADE? ');
 
-console.log('the answer before', age);
+function qw2() {
+    let age = prompt('DO YOU THINK THAT I AM IN THE 20`S DECADE? ');
 
-age = age.toUpperCase();
+    console.log('the answer before', age);
 
-console.log('the answer after', age);
+    age = age.toUpperCase();
 
-if (age === 'YES' || age === 'Y') {
+    console.log('the answer after', age);
 
-    console.log(age);
-    alert('MAYBE!');
+    if (age === 'YES' || age === 'Y') {
 
-} else if (age === 'NO' || age === 'N') {
+        console.log(age);
+        alert('MAYBE!');
 
-    console.log(age);
-    alert('IT SEEM RIGHT');
-    score++
+    } else if (age === 'NO' || age === 'N') {
 
-} else {
-    alert('please write your answer using  yes/no or y/n only !');
+        console.log(age);
+        alert('IT SEEM RIGHT');
+        score++
+
+    } else {
+        alert('please write your answer using  yes/no or y/n only !');
+    }
 }
-
 
 let home = prompt('IN YOUR OPINION I LIVE IN AMMAN ?');
 
