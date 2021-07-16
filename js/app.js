@@ -36,6 +36,8 @@ function qw1() {
     }
 }
 qw1();
+console.log(qw1);
+
 
 
 function qw2() {
@@ -56,13 +58,15 @@ function qw2() {
 
         console.log(age);
         alert('IT SEEM RIGHT');
-        score++
+        score++;
 
     } else {
         alert('please write your answer using  yes/no or y/n only !');
     }
 }
- qw2();
+qw2();
+console.log(qw2);
+
 
 
 function qw3() {
@@ -77,7 +81,7 @@ function qw3() {
     if (home === 'YES' || home === 'Y') {
 
         console.log(home);
-        score++
+        score++;
 
         alert('YES I LIVE IN AMMAN !');
 
@@ -91,6 +95,8 @@ function qw3() {
     }
 }
 qw3();
+console.log(qw3);
+
 
 function qw4() {
     let football = prompt('DO YOU THINK THAT I LIKE WATCH FOOTBALL ?');
@@ -104,7 +110,7 @@ function qw4() {
     if (football === 'YES' || football === 'Y') {
 
         console.log(football);
-        score++
+        score++;
 
         alert('YES I LIKE WATCH FOOTBALL');
 
@@ -118,6 +124,8 @@ function qw4() {
     }
 }
 qw4();
+console.log(qw4);
+
 
 function qw5() {
     let best = prompt('DO YOU AGREE WITH ME THAT ! LEONIL MESSI ! IS THE BEST FOOTBALL EVER ?');
@@ -146,72 +154,76 @@ function qw5() {
 
 }
 qw5();
+console.log(qw5);
+
 
 function qw6() {
-let num
-alert('NOW guess A Number in your mind');
+    let num
+    alert('NOW guess A Number in your mind');
 
-num = prompt('inter the number you guess');
+    num = prompt('inter the number you guess');
 
-for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
 
-    if (num == 7) {
-        alert('you are right !');
-        score++
-
-        break;
-    }
-
-    else if (num < 7) {
-        num = prompt('TOO low!');
-    }
-
-    else {
-        num = prompt('TOO HIGHT !');
-    }
-    if (i === 3) {
-        alert('you are out of tries and the correct answer is 7'
-
-        )
-    }
-}
-
-qw6();
-
-function qw7(){
-let month = ['march', 'april', 'may', 'june', 'july', 'august']
-
-alert('what is the best month to make  BARBECUE in the outside country');
-
-for (let k = 0; k < 6; k++) {
-
-    let yourmonth = prompt('type the name of month');
-
-    for (let j = 0; j < month.length; j++) {
-
-        if (yourmonth === month[j]) {
-
-
+        if (num == 7) {
             alert('you are right !');
             score++
-            k = 6
-                ;
+
             break;
+        }
+
+        else if (num < 7) {
+            num = prompt('TOO low!');
+        }
+
+        else {
+            num = prompt('TOO HIGHT !');
+        }
+        if (i === 3) {
+            alert('you are out of tries and the correct answer is 7'
+
+            )
+        }
+    }
+}
+qw6();
+console.log(qw6);
 
 
+function qw7() {
+    let month = ['march', 'april', 'may', 'june', 'july', 'august'];
+
+    alert('what is the best month to make  BARBECUE in the outside country');
+
+    for (let k = 0; k < 6; k++) {
+
+        let yourmonth = prompt('type the name of month');
+
+        for (let j = 0; j < month.length; j++) {
+
+            if (yourmonth === month[j]) {
+
+
+                alert('you are right !');
+                score++;
+                k = 6;
+                break;
+
+
+
+            }
+
+        }
+        if (k === 5) {
+            alert('you are out of tries and the correct answer is ');
 
         }
 
-    }
-    if (k === 5) {
-        alert('you are out of tries and the correct answer is ');
 
     }
-
-
 }
 qw7();
-    
+console.log(qw7);
+
 alert('all monthes suitable just if you want january,february,march,april,may,june,july,august,septemper,october,november,december !');
 alert('your score is ' + score + '/7');
-
